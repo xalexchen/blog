@@ -1,0 +1,13 @@
+---
+layout: post
+title: "fighting"
+date: 2013-09-07 15:08
+comments: true
+categories: 
+---
+If something you don't do it right now, it probably won't be done anymore.
+
+
+{% img /images/pictures/20130907150540.png %}
+
+
