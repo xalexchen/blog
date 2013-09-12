@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Alex Chen]]></title>
   <link href="http://xalexchen.github.io/blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
-  <updated>2013-09-09T11:44:41+08:00</updated>
+  <updated>2013-09-12T15:36:51+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
   <author>
     <name><![CDATA[Alex Chen]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A little tips about android studio build.gradle]]></title>
+    <link href="http://xalexchen.github.io/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/"/>
+    <updated>2013-09-12T14:45:00+08:00</updated>
+    <id>http://xalexchen.github.io/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle</id>
+    <content type="html"><![CDATA[<p>As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
+
+<br>
+
+
+<p><div><script src='https://gist.github.com/6533747.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<br>
+
+
+<p>Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
+
+<br>
+
+
+<p><div><script src='https://gist.github.com/6533922.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<br>
+
+
+<p>and more will continue post below &hellip;.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[View your app in 3D]]></title>

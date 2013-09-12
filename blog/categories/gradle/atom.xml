@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alex Chen]]></title>
-  <link href="http://xalexchen.github.io/blog/atom.xml" rel="self"/>
+  <title><![CDATA[Category: gradle | Alex Chen]]></title>
+  <link href="http://xalexchen.github.io/blog/blog/categories/gradle/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
   <updated>2013-09-12T15:36:51+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
@@ -23,11 +23,9 @@
 <br>
 
 
-<div><script src='https://gist.github.com/6533747.js'></script>
+<p><div><script src='https://gist.github.com/6533747.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
-
-
-
+</p>
 
 <br>
 
@@ -37,38 +35,14 @@
 <br>
 
 
-<div><script src='https://gist.github.com/6533922.js'></script>
+<p><div><script src='https://gist.github.com/6533922.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
-
-
-
+</p>
 
 <br>
 
 
 <p>and more will continue post below &hellip;.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[View your app in 3D]]></title>
-    <link href="http://xalexchen.github.io/blog/blog/2013/09/09/driod-inspector/"/>
-    <updated>2013-09-09T11:14:00+08:00</updated>
-    <id>http://xalexchen.github.io/blog/blog/2013/09/09/driod-inspector</id>
-    <content type="html"><![CDATA[<p><a href="http://www.sriramramani.com/droidinspector/">Droid Inspector</a> it&rsquo;s a great tools to capture and view the entire app in 3D.on the posted <a href="http://www.curious-creature.org/2012/12/01/android-performance-case-study/">blog</a> by <a href="https://plus.google.com/+RomainGuy">Romain Guy </a>i learn how to use a series of android integrate tools to sovle my view issues.Hope you guys will enjoy this tools</p>
-
-<p><img src="http://xalexchen.github.io/blog/images/pictures/droid-inspector.png"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fighting]]></title>
-    <link href="http://xalexchen.github.io/blog/blog/2013/09/07/fighting/"/>
-    <updated>2013-09-07T15:08:00+08:00</updated>
-    <id>http://xalexchen.github.io/blog/blog/2013/09/07/fighting</id>
-    <content type="html"><![CDATA[<p>If something you don&rsquo;t do it right now, it probably won&rsquo;t be done anymore.</p>
-
-<p><img src="http://xalexchen.github.io/blog/images/pictures/20130907150540.png"></p>
 ]]></content>
   </entry>
   

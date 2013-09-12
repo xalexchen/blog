@@ -5,11 +5,11 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Blog Archives - Alex Chen</title>
+	<title>A little tips about android studio build.gradle - Alex Chen</title>
 	<meta name="author" content="Alex Chen">
 
 	
-	<meta name="description" content="2013 Sep 12 Android, NDK, gradle A little tips about android studio build.gradle Sep 9 Android, Inspector, Overdraw View your app in 3D Sep 7 &hellip;">
+	<meta name="description" content="A Little Tips About Android Studio build.gradle As far as we know, Android stuido doesn&rsquo;t support.so libraries yet.but we may have some &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
 
 	<link href="/blog/atom.xml" rel="alternate" title="Alex Chen" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://xalexchen.github.io/blog/blog/archives/">
+	<link rel="canonical" href="http://xalexchen.github.io/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/">
 	<link href="/blog/favicon.png" rel="shortcut icon">
 	<link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<link href="/blog/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -91,67 +91,55 @@
 				
 			
 			<div class="mid-col-container">
-				<div id="content" class="inner"><div itemscope itemtype="http://schema.org/Blog">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">A Little Tips About Android Studio build.gradle</h1>
+	<div class="entry-content" itemprop="articleBody"><p>As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
 
-	
-
-
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2013-09-12T14:45:00+08:00" itemprop="datePublished">Sep 12</time></span>
-		<br>
-		<span class="tags">
+<br>
 
 
-	<a class='category' href='/blog/blog/categories/android/'>Android</a>, <a class='category' href='/blog/blog/categories/ndk/'>NDK</a>, <a class='category' href='/blog/blog/categories/gradle/'>gradle</a>
+<div><script src='https://gist.github.com/6533747.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
 
 
-</span>
-	    
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/">A little tips about android studio build.gradle</a></h1>
+
+
+<br>
+
+
+<p>Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
+
+<br>
+
+
+<div><script src='https://gist.github.com/6533922.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+
+
+<br>
+
+
+<p>and more will continue post below &hellip;.</p>
+</div>
+
 </article>
 
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2013-09-09T11:14:00+08:00" itemprop="datePublished">Sep  9</time></span>
-		<br>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/blog/categories/android/'>Android</a>, <a class='category' href='/blog/blog/categories/inspector/'>Inspector</a>, <a class='category' href='/blog/blog/categories/overdraw/'>Overdraw</a>
-
-
-</span>
-	    
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/09/driod-inspector/">View your app in 3D</a></h1>
-</article>
-
 	
-
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2013-09-07T15:08:00+08:00" itemprop="datePublished">Sep  7</time></span>
-		<br>
-		<span class="tags">
-
-</span>
-	    
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/07/fighting/">fighting</a></h1>
-</article>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
-  </section>
-</div></div>
+
+</div>
 			</div>
 			<footer id="footer" class="inner"><p>
   Copyright &copy; 2013 - Alex Chen
