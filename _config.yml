@@ -62,6 +62,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 #   3rd Party Settings    #
 # ----------------------- #
 
+# weibo
+weibo_user: 2120978107
 # Github repositories
 github_user: xalexchen
 github_repo_count: 0
@@ -73,7 +75,7 @@ twitter_user:
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: true
+google_plus_one: false
 google_plus_one_size: medium
 
 # Google Plus Profile

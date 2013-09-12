@@ -324,7 +324,7 @@ $header-height: 30px;
 				background: image-url('social/weibo.png') center no-repeat rgb(213,43,42);
 				border: 1px solid rgb(232,44,12);
 				&:hover{
-					border: 1px solid darken(rgb(247,44,12), 10%);
+					border: 1px solid darken(rgb(213,43,42), 10%);
 				}
 			}
 			&.facebook{
