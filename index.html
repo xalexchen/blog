@@ -9,7 +9,7 @@
 	<meta name="author" content="Alex Chen">
 
 	
-	<meta name="description" content="Sep 12th, 2013 Android, NDK, gradle A Little Tips About Android Studio build.gradle As far as we know, Android stuido doesn&rsquo;t support.so &hellip;">
+	<meta name="description" content="Sep 12th, 2013 Android, NDK, gradle A Little Tips About Android Studio build.gradle 1.As far as we know, Android stuido doesn&rsquo;t support.so &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -121,7 +121,7 @@
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/" itemprop="url">A Little Tips About Android Studio build.gradle</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
+		<p>1.As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
 
 <br>
 
@@ -135,7 +135,7 @@
 <br>
 
 
-<p>Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
+<p>2.Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
 
 <br>
 
@@ -145,6 +145,24 @@
 
 
 
+
+<br>
+
+
+<p>3.When we try to build a simplest gradle call (e.g clean or assembleRelease) is pretty slow.On my computer it took around eight seconds for clean task.if you tell gradle to use a daemon to build.just create a file named gradle.properties in the following directory:</p>
+
+<pre><code>/home/&lt;username&gt;/.gradle(linux)
+/Users/&lt;username&gt;/.gradle(Mac)
+C:\Users\&lt;username&gt;\.gradle\(Windows)
+</code></pre>
+
+<p>Add this line to the file:</p>
+
+<pre><code>org.gradle.daemon=true
+</code></pre>
+
+<p>From know on Gradle will use a daemon to build,whetehr you are using gradle from command line or building in android studio.add this files means the daemon won&rsquo;t stop automatically even you don&rsquo;t build anything with gradle for sometime.
+so the daemon alway ready to go and no need to a long start-up time at the next build.share by TIME ROSE <a href="https://www.timroes.de/2013/09/12/speed-up-gradle/">HOW TO… SPEED UP GRADLE BUILD TIME</a></p>
 
 <br>
 
