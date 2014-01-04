@@ -320,11 +320,11 @@ $header-height: 30px;
 			&:hover{
 				opacity: 1;
 			}
-&.weibo{
-				background: image-url('social/weibo.png') center no-repeat rgb(213,43,42);
-				border: 1px solid rgb(232,44,12);
+			&.email{
+				background: image-url('social/email.png') center no-repeat #050505;
+				border: 1px solid #050505;
 				&:hover{
-					border: 1px solid darken(rgb(247,44,12), 10%);
+					border: 1px solid darken(#050505, 10%);
 				}
 			}
 			&.facebook{
@@ -392,6 +392,13 @@ $header-height: 30px;
 			  border: 1px solid rgb(58,114,159);
 			  &:hover{
 			    border: 1px solid darken(rgb(0,102,255), 10%);
+			  }
+			}
+			&.douban{
+			  background: image-url('social/douban.png') center no-repeat rgb(0,128,36);
+			  border: 1px solid rgb(0,128,36);
+			  &:hover{
+			    border: 1px solid darken(rgb(0,128,36), 10%);
 			  }
 			}
 			&.rss{

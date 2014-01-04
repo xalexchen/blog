@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /blog/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: xalexchen@vip.qq.com
+email: xalexchen@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
