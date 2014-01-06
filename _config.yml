@@ -64,6 +64,12 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # weibo
 weibo_user: 2120978107
+
+# fakebook 
+facebook_user: xalexchen
+# Facebook Like
+facebook_like: true
+
 # Github repositories
 github_user: xalexchen
 github_repo_count: 0
@@ -75,7 +81,7 @@ twitter_user:
 twitter_tweet_button: true
 
 # Google +1
-google_plus_one: false
+google_plus_one: true
 google_plus_one_size: medium
 
 # Google Plus Profile
@@ -98,5 +104,4 @@ disqus_show_comment_count: false
 # Google Analytics
 google_analytics_tracking_id: UA-43842938-1
 
-# Facebook Like
-facebook_like: false
+
