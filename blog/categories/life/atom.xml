@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Life | Alex Chen]]></title>
+  <link href="http://xalexchen.github.io/blog/blog/categories/life/atom.xml" rel="self"/>
+  <link href="http://xalexchen.github.io/blog/"/>
+  <updated>2014-01-06T13:09:00+08:00</updated>
+  <id>http://xalexchen.github.io/blog/</id>
+  <author>
+    <name><![CDATA[Alex Chen]]></name>
+    <email><![CDATA[xalexchen@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Insights on life]]></title>
+    <link href="http://xalexchen.github.io/blog/blog/2014/01/06/insights-on-life/"/>
+    <updated>2014-01-06T12:54:04+08:00</updated>
+    <id>http://xalexchen.github.io/blog/blog/2014/01/06/insights-on-life</id>
+    <content type="html"><![CDATA[<p>Photo by myself at HaiNan province 2013.1.1</p>
+
+<br>
+
+
+<p><img src="/images/photos/travel/hainan/12.png"></p>
+
+<br>
+
+]]></content>
+  </entry>
+  
+</feed>
