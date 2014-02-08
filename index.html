@@ -185,7 +185,9 @@
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/10/18/sync-tow-folders-by-python/" itemprop="url">Use Python Script to Synchronize Two Folders</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>Recently i travel to YunNan province.when i come back i found a have a lot of photo file need to back up to two different hard disk.previous i just simply copy and paste.it will cause a long time process and some time make a mistake.Recently i&rsquo;m learning python and i want to have a opportunity to take a practice.googing and found a little python script can done this.i just modify a little bit and it work for me .share to someone need it :D.</p>
+		<p>Recently i travel to YunNan province.when i come back i found a have a lot of photo file need to back up to two different hard disk.previous i just <strong>simply copy and paste</strong>.it will cause a long time process and some time make a mistake.</p>
+
+<p>Recently i&rsquo;m learning python and i want to have a opportunity to take a practice.googing and found a little python script can done this.i just modify a little bit and it work for me .share to someone need it :D.</p>
 
 <script src="https://gist.github.com/xalexchen/7038205.js"></script>
 
@@ -225,51 +227,45 @@
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/" itemprop="url">A Little Tips About Android Studio build.gradle</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>1.As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
-
-<br>
+		<ul>
+<li>As far as we know,<code>Android stuido doesn't support.so libraries yet</code>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</li>
+</ul>
 
 
 <div><script src='https://gist.github.com/6533747.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 
 
-
-
-<br>
-
-
-<p>2.Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
-
-<br>
+<ul>
+<li>Most people like me will release the apk file frequently.but how do we exactly know which version we are using.we may have the same version code and version name but one was release on morning and bug still exist ,another one was at night but bug was fixed it.the common way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to <code>APPNAME-VERSION-DATE.apk</code> or the other type you want.</li>
+</ul>
 
 
 <div><script src='https://gist.github.com/6533922.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 
 
+<ul>
+<li>When we try to build a simplest gradle call (e.g clean or assembleRelease) is pretty slow.On my computer it took around eight seconds for clean task.if you tell gradle to use a daemon to build.just create a file named gradle.properties in the following directory:</li>
+</ul>
 
 
-<br>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/home/&lt;username&gt;/.gradle(linux)
+</span><span class='line'>/Users/&lt;username&gt;/.gradle(Mac)
+</span><span class='line'>C:\Users\&lt;username&gt;\.gradle\(Windows)</span></code></pre></td></tr></table></div></figure>
 
 
-<p>3.When we try to build a simplest gradle call (e.g clean or assembleRelease) is pretty slow.On my computer it took around eight seconds for clean task.if you tell gradle to use a daemon to build.just create a file named gradle.properties in the following directory:</p>
+<p>  <br/>
+  Add this line to the file:
+  <pre><code>
+  org.gradle.daemon=true
+  </code></pre></p>
 
-<pre><code>/home/&lt;username&gt;/.gradle(linux)
-/Users/&lt;username&gt;/.gradle(Mac)
-C:\Users\&lt;username&gt;\.gradle\(Windows)
-</code></pre>
-
-<p>Add this line to the file:</p>
-
-<pre><code>org.gradle.daemon=true
-</code></pre>
-
-<p>From know on Gradle will use a daemon to build,whetehr you are using gradle from command line or building in android studio.add this files means the daemon won&rsquo;t stop automatically even you don&rsquo;t build anything with gradle for sometime.
-so the daemon alway ready to go and no need to a long start-up time at the next build.share by TIME ROSE <a href="https://www.timroes.de/2013/09/12/speed-up-gradle/">HOW TO… SPEED UP GRADLE BUILD TIME</a></p>
-
-<br>
-
+<p>  From nows on Gradle will use a daemon to build,whatever you are using gradle from command line or building in android studio.add this files means the daemon won&rsquo;t stop automatically even you don&rsquo;t build anything with gradle for sometime.
+so the daemon alway ready to go and no need to a long start-up time at the next build.share by <strong>TIME ROSE</strong> <a href="https://www.timroes.de/2013/09/12/speed-up-gradle/">HOW TO… SPEED UP GRADLE BUILD TIME</a></p>
 
 <p>and more will continue post below &hellip;.</p>
 
@@ -306,7 +302,9 @@ so the daemon alway ready to go and no need to a long start-up time at the next 
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/09/driod-inspector/" itemprop="url">View Your App in 3D</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p><a href="http://www.sriramramani.com/droidinspector/">Droid Inspector</a> it&rsquo;s a great tools to capture and view the entire app in 3D.on the posted <a href="http://www.curious-creature.org/2012/12/01/android-performance-case-study/">blog</a> by <a href="https://plus.google.com/+RomainGuy">Romain Guy </a>i learn how to use a series of android integrate tools to sovle my view issues.Hope you guys will enjoy this tools</p>
+		<p><a href="http://www.sriramramani.com/droidinspector/">Droid Inspector</a> it&rsquo;s a great tools to capture and view the entire app in 3D vision.<br/>
+On the <a href="http://www.curious-creature.org/2012/12/01/android-performance-case-study/">posted</a> by <a href="https://plus.google.com/+RomainGuy">Romain Guy</a>
+i learn a lot how to use a series of android integrate tools to sovle my view issues.Hope you guys will enjoy this tools</p>
 
 <p><img src="/blog/images/pictures/droid-inspector.png"></p>
 
@@ -339,7 +337,8 @@ so the daemon alway ready to go and no need to a long start-up time at the next 
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/07/fighting/" itemprop="url">Fighting</a></h1>
 	<div class="entry-content" itemprop="articleBody">
-		<p>If something you don&rsquo;t do it right now, it probably won&rsquo;t be done anymore.</p>
+		<blockquote><p>If something you don&#8217;t do it right now, it probably won&#8217;t be done anymore.</p></blockquote>
+
 
 <p><img src="/blog/images/pictures/20130907150540.png"></p>
 
@@ -359,8 +358,7 @@ so the daemon alway ready to go and no need to a long start-up time at the next 
 			<footer id="footer" class="inner"><p>
   Copyright &copy; 2014 - Alex Chen
 </p>
-
-Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+</footer>
 			
 
 

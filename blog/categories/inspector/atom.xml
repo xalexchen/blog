@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Inspector | Alex Chen]]></title>
   <link href="http://xalexchen.github.io/blog/blog/categories/inspector/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
-  <updated>2014-01-06T13:09:00+08:00</updated>
+  <updated>2014-02-08T10:38:48+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
   <author>
     <name><![CDATA[Alex Chen]]></name>
@@ -18,7 +18,9 @@
     <link href="http://xalexchen.github.io/blog/blog/2013/09/09/driod-inspector/"/>
     <updated>2013-09-09T11:14:00+08:00</updated>
     <id>http://xalexchen.github.io/blog/blog/2013/09/09/driod-inspector</id>
-    <content type="html"><![CDATA[<p><a href="http://www.sriramramani.com/droidinspector/">Droid Inspector</a> it&rsquo;s a great tools to capture and view the entire app in 3D.on the posted <a href="http://www.curious-creature.org/2012/12/01/android-performance-case-study/">blog</a> by <a href="https://plus.google.com/+RomainGuy">Romain Guy </a>i learn how to use a series of android integrate tools to sovle my view issues.Hope you guys will enjoy this tools</p>
+    <content type="html"><![CDATA[<p><a href="http://www.sriramramani.com/droidinspector/">Droid Inspector</a> it&rsquo;s a great tools to capture and view the entire app in 3D vision.<br/>
+On the <a href="http://www.curious-creature.org/2012/12/01/android-performance-case-study/">posted</a> by <a href="https://plus.google.com/+RomainGuy">Romain Guy</a>
+i learn a lot how to use a series of android integrate tools to sovle my view issues.Hope you guys will enjoy this tools</p>
 
 <p><img src="/images/pictures/droid-inspector.png"></p>
 ]]></content>

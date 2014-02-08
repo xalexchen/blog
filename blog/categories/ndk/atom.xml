@@ -4,7 +4,7 @@
   <title><![CDATA[Category: NDK | Alex Chen]]></title>
   <link href="http://xalexchen.github.io/blog/blog/categories/ndk/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
-  <updated>2014-01-06T13:09:00+08:00</updated>
+  <updated>2014-02-08T10:38:48+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
   <author>
     <name><![CDATA[Alex Chen]]></name>
@@ -18,47 +18,30 @@
     <link href="http://xalexchen.github.io/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/"/>
     <updated>2013-09-12T14:45:00+08:00</updated>
     <id>http://xalexchen.github.io/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle</id>
-    <content type="html"><![CDATA[<p>1.As far as we know,<s> Android stuido doesn&rsquo;t support.so libraries yet</s>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.</p>
-
-<br>
-
-
-<p><div><script src='https://gist.github.com/6533747.js'></script>
+    <content type="html"><![CDATA[<ul>
+<li><p>As far as we know,<code>Android stuido doesn't support.so libraries yet</code>.but we may have some project need to use it.Googleing around for it.i found it and put it on my Gist.here it is.<br/>
+<div><script src='https://gist.github.com/6533747.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
-</p>
-
-<br>
-
-
-<p>2.Most people like me will release the apk file frequently.but how do we exactly know which version we are using.<u>we may have the same version code and version name but one was release on morning and bug still exist ,another was at night but bug was fixed it.</u>the traditional way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to APPNAME-VERSION-DATE.apk or the other type you want.</p>
-
-<br>
-
-
-<p><div><script src='https://gist.github.com/6533922.js'></script>
+</p></li>
+<li><p>Most people like me will release the apk file frequently.but how do we exactly know which version we are using.we may have the same version code and version name but one was release on morning and bug still exist ,another one was at night but bug was fixed it.the common way was rename it when release.but a lazy way was let the machine do it.just using a little groovy script.when we exectue asselbleRelease task.the final apk file will automatically rename to <code>APPNAME-VERSION-DATE.apk</code> or the other type you want.<br/>
+<div><script src='https://gist.github.com/6533922.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
-</p>
+</p></li>
+<li><p>When we try to build a simplest gradle call (e.g clean or assembleRelease) is pretty slow.On my computer it took around eight seconds for clean task.if you tell gradle to use a daemon to build.just create a file named gradle.properties in the following directory:
+<code>
+ /home/&lt;username&gt;/.gradle(linux)
+ /Users/&lt;username&gt;/.gradle(Mac)
+ C:\Users\&lt;username&gt;\.gradle\(Windows)
+</code>
+Add this line to the file:
+<pre><code>
+org.gradle.daemon=true
+</code></pre></p></li>
+</ul>
 
-<br>
 
-
-<p>3.When we try to build a simplest gradle call (e.g clean or assembleRelease) is pretty slow.On my computer it took around eight seconds for clean task.if you tell gradle to use a daemon to build.just create a file named gradle.properties in the following directory:</p>
-
-<pre><code>/home/&lt;username&gt;/.gradle(linux)
-/Users/&lt;username&gt;/.gradle(Mac)
-C:\Users\&lt;username&gt;\.gradle\(Windows)
-</code></pre>
-
-<p>Add this line to the file:</p>
-
-<pre><code>org.gradle.daemon=true
-</code></pre>
-
-<p>From know on Gradle will use a daemon to build,whetehr you are using gradle from command line or building in android studio.add this files means the daemon won&rsquo;t stop automatically even you don&rsquo;t build anything with gradle for sometime.
-so the daemon alway ready to go and no need to a long start-up time at the next build.share by TIME ROSE <a href="https://www.timroes.de/2013/09/12/speed-up-gradle/">HOW TO… SPEED UP GRADLE BUILD TIME</a></p>
-
-<br>
-
+<p>  From nows on Gradle will use a daemon to build,whatever you are using gradle from command line or building in android studio.add this files means the daemon won&rsquo;t stop automatically even you don&rsquo;t build anything with gradle for sometime.
+so the daemon alway ready to go and no need to a long start-up time at the next build.share by <strong>TIME ROSE</strong> <a href="https://www.timroes.de/2013/09/12/speed-up-gradle/">HOW TO… SPEED UP GRADLE BUILD TIME</a></p>
 
 <p>and more will continue post below &hellip;.</p>
 ]]></content>

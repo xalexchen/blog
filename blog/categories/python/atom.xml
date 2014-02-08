@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | Alex Chen]]></title>
   <link href="http://xalexchen.github.io/blog/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
-  <updated>2014-01-06T13:09:00+08:00</updated>
+  <updated>2014-02-08T10:38:48+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
   <author>
     <name><![CDATA[Alex Chen]]></name>
@@ -18,7 +18,9 @@
     <link href="http://xalexchen.github.io/blog/blog/2013/10/18/sync-tow-folders-by-python/"/>
     <updated>2013-10-18T16:17:00+08:00</updated>
     <id>http://xalexchen.github.io/blog/blog/2013/10/18/sync-tow-folders-by-python</id>
-    <content type="html"><![CDATA[<p>Recently i travel to YunNan province.when i come back i found a have a lot of photo file need to back up to two different hard disk.previous i just simply copy and paste.it will cause a long time process and some time make a mistake.Recently i&rsquo;m learning python and i want to have a opportunity to take a practice.googing and found a little python script can done this.i just modify a little bit and it work for me .share to someone need it :D.</p>
+    <content type="html"><![CDATA[<p>Recently i travel to YunNan province.when i come back i found a have a lot of photo file need to back up to two different hard disk.previous i just <strong>simply copy and paste</strong>.it will cause a long time process and some time make a mistake.</p>
+
+<p>Recently i&rsquo;m learning python and i want to have a opportunity to take a practice.googing and found a little python script can done this.i just modify a little bit and it work for me .share to someone need it :D.</p>
 
 <script src="https://gist.github.com/xalexchen/7038205.js"></script>
 
