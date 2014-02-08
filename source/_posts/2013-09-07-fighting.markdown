@@ -5,8 +5,9 @@ date: 2013-09-07 15:08
 comments: true
 categories: 
 ---
+{%blockquote%}
 If something you don't do it right now, it probably won't be done anymore.
-
+{%endblockquote%}
 
 {% img /images/pictures/20130907150540.png %}
 
