@@ -1,0 +1,25 @@
+---
+layout: post
+title: "birthday"
+date: 2014-02-11 12:37:24 +0800
+comments: true
+categories: life dream
+---
+First of all,happy birthday to myself.my wish ? i hope i can have a chance to finish the cycling trip which from ChenDu province to Tibet. it's the most danger and amazing cycle roads in china.last year i already make a holiday and start training my body to fit the extremely weather (high altitude,snow mountain). even buying some equipment.unfortunately because some reason can't go.that's was the sadness things for the last year.  
+when we were young we can do whatever you want to do.but as we grow up like me was 25.i start consider the future and undertake the responsibility for myself and family.we need to take care of them.to stand up on this social we need to buy a house.meet someone or maybe get married at the next few years. so.hope can finish it with dream and passion.  
+
+Satellite vision  
+
+{% img /images/pictures/cycling_chuanzhang.png %}
+
+Altitude view  
+
+{% img /images/pictures/tibet_cycling.jpg %}
+
+My travel footprint  
+
+{% img /images/pictures/travel_map.jpg %}
+
+{%blockquote%}
+If you have dream.you gotta protect it.
+{%endblockquote%}
