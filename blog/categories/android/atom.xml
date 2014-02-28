@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Alex Chen]]></title>
   <link href="http://xalexchen.github.io/blog/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://xalexchen.github.io/blog/"/>
-  <updated>2014-02-11T13:24:10+08:00</updated>
+  <updated>2014-02-28T13:28:05+08:00</updated>
   <id>http://xalexchen.github.io/blog/</id>
   <author>
     <name><![CDATA[Alex Chen]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Android ADB tricks]]></title>
+    <link href="http://xalexchen.github.io/blog/blog/2014/02/28/android-adb-tricks/"/>
+    <updated>2014-02-28T12:33:34+08:00</updated>
+    <id>http://xalexchen.github.io/blog/blog/2014/02/28/android-adb-tricks</id>
+    <content type="html"><![CDATA[<p>With android adb tools.we can reboot cell phone.push/pull data from/into device.analyzing app performance etc. but i am not going to talk about this.because i am going to give you a really cool way to master the android adb tools or adb shell.</p>
+
+<br>
+
+
+<h3>Wake up phone on a hacker way</h3>
+
+<p>Almost both android developer will keep connected our phone to the PC.as we all konw to wake up the phone we need to push the power button.come on.we&rsquo;re lazy and geek guy.can we act it like a programer ? like on the movie some guy just type in a command ? Open your terminal and input the following code.
+```
+adb shell input keyevent 26</p>
+
+<p>```
+the priciple was we make a fake power button event and report to android event system.for more keycode value please reference the following <a href="http://stackoverflow.com/questions/7789826/adb-shell-input-events">link</a></p>
+
+<p><code>More: increate/decrease sound volume</code></p>
+
+<br>
+
+
+<h3>Launch app on a geek way</h3>
+
+<p>What if you want to open Camera app without touch your phone.it can be done ? definitely..</p>
+
+<p>```
+adb shell am start -n com.android.camera/com.android.camera.Camera</p>
+
+<p>```
+okey,you want to make a call?.</p>
+
+<p>```
+am start -a android.intent.action.CALL -d tel:10086</p>
+
+<p>```</p>
+
+<p><code>Note:any other app can be done if your know the exactly package name and Activity component name.</code></p>
+
+<br>
+
+
+<h3>Protect your privacy</h3>
+
+<p>   your friends need to borrow your phone for a while.you don&rsquo;t want him open your Gmail or WeChat to see anythings.(maybe your GF or BF (￣▽￣)&ldquo;) anyway.your can&rsquo;t just directly tell them.but we can do it on a silence way.just let it disappear on the screen.it&rsquo;s not to delete your app.more safely(#need root premission#)</p>
+
+<p>```
+adb shell
+su
+pm disable com.google.android.gm
+// roll it back when your need
+pm enable com.google.android.gm</p>
+
+<p><code>``   
+</code>Note:you can do it on any app if you know the exactly package name.`</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A little tips about android studio build.gradle]]></title>

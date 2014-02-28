@@ -5,11 +5,11 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Category: Android - Alex Chen</title>
+	<title>Android ADB tricks - Alex Chen</title>
 	<meta name="author" content="Alex Chen">
 
 	
-	<meta name="description" content="Category: Android">
+	<meta name="description" content="Android ADB Tricks With android adb tools.we can reboot cell phone.push/pull data from/into device.analyzing app performance etc. but i am not going &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
 
 	<link href="/blog/atom.xml" rel="alternate" title="Alex Chen" type="application/atom+xml">
 	
-	<link rel="canonical" href="http://xalexchen.github.io/blogblog/categories/android/">
+	<link rel="canonical" href="http://xalexchen.github.io/blog/blog/2014/02/28/android-adb-tricks/">
 	<link href="/blog/favicon.png" rel="shortcut icon">
 	<link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<link href="/blog/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -112,73 +112,89 @@
 				
 			
 			<div class="mid-col-container">
-				<div id="content" class="inner">
-	
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Android ADB Tricks</h1>
+	<div class="entry-content" itemprop="articleBody"><p>With android adb tools.we can reboot cell phone.push/pull data from/into device.analyzing app performance etc. but i am not going to talk about this.because i am going to give you a really cool way to master the android adb tools or adb shell.</p>
+
+<br>
 
 
-	
-	
-	<section class="archives"><h1 class="year">2014</h1>
+<h3>Wake up phone on a hacker way</h3>
 
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2014-02-28T12:33:34+08:00" itemprop="datePublished">Feb 28</time></span>
-		<br>
-		<span class="tags">
+<p>Almost both android developer will keep connected our phone to the PC.as we all konw to wake up the phone we need to push the power button.come on.we&rsquo;re lazy and geek guy.can we act it like a programer ? like on the movie some guy just type in a command ? Open your terminal and input the following code.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell input keyevent 26
+</span></code></pre></td></tr></table></div></figure>
 
 
-	<a class='category' href='/blog/blog/categories/android/'>Android</a>, <a class='category' href='/blog/blog/categories/tricks/'>Tricks</a>
+<p>the priciple was we make a fake power button event and report to android event system.for more keycode value please reference the following <a href="http://stackoverflow.com/questions/7789826/adb-shell-input-events">link</a></p>
+
+<p><code>More: increate/decrease sound volume</code></p>
+
+<br>
 
 
-</span>
-	    
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2014/02/28/android-adb-tricks/">Android ADB tricks</a></h1>
+<h3>Launch app on a geek way</h3>
+
+<p>What if you want to open Camera app without touch your phone.it can be done ? definitely..</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell am start -n com.android.camera/com.android.camera.Camera
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>okey,you want to make a call?.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>am start -a android.intent.action.CALL -d tel:10086
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>Note:any other app can be done if your know the exactly package name and Activity component name.</code></p>
+
+<br>
+
+
+<h3>Protect your privacy</h3>
+
+<p>   your friends need to borrow your phone for a while.you don&rsquo;t want him open your Gmail or WeChat to see anythings.(maybe your GF or BF (￣▽￣)&ldquo;) anyway.your can&rsquo;t just directly tell them.but we can do it on a silence way.just let it disappear on the screen.it&rsquo;s not to delete your app.more safely(#need root premission#)</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>adb shell 
+</span><span class='line'>su
+</span><span class='line'>pm disable com.google.android.gm
+</span><span class='line'>// roll it back when your need
+</span><span class='line'>pm enable com.google.android.gm
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> <br/>
+<code>Note:you can do it on any app if you know the exactly package name.</code></p>
+</div>
+
 </article>
 
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-
-
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 	
 	
-		</section>
+	<a class="addthis_button_tweet"></a>
 	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2013-09-12T14:45:00+08:00" itemprop="datePublished">Sep 12</time></span>
-		<br>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/blog/categories/android/'>Android</a>, <a class='category' href='/blog/blog/categories/ndk/'>NDK</a>, <a class='category' href='/blog/blog/categories/gradle/'>gradle</a>
-
-
-</span>
-	    
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
 	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/12/a-little-tips-about-android-studio-build-dot-gradle/">A little tips about android studio build.gradle</a></h1>
-</article>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
-	
-
-
-<article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<span class="date"><time datetime="2013-09-09T11:14:00+08:00" itemprop="datePublished">Sep  9</time></span>
-		<br>
-		<span class="tags">
-
-
-	<a class='category' href='/blog/blog/categories/android/'>Android</a>, <a class='category' href='/blog/blog/categories/inspector/'>Inspector</a>, <a class='category' href='/blog/blog/categories/overdraw/'>Overdraw</a>
-
-
-</span>
-	    
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/blog/2013/09/09/driod-inspector/">View your app in 3D</a></h1>
-</article>
 
 </div>
 			</div>
